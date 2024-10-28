@@ -7,14 +7,17 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: #f3f3f3;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header styling */
+/* Header styling with background image */
 header {
-  background-color: white;
+  background-image: url('images/golf_ball_landing_scene.png'); /* Background image for header */
+  background-size: cover;
+  background-position: center;
+  color: #333;
   border-bottom: 1px solid #e5e7eb;
   padding: 1rem 2rem;
   height: auto;
@@ -55,34 +58,26 @@ nav a:hover {
   background-color: #bbf7d0;
 }
 
-/* Homepage Specific Styles */
+/* Section styling */
 section {
   padding: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* About Section */
 section h2 {
-  color: #333;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: #166534;
   margin-bottom: 1.5rem;
 }
 
-.about-section {
-  background-color: #dcfce7;
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  margin: 2rem auto;
-}
-
 .about-section p {
+  color: #333;
   margin-bottom: 1rem;
-}
-
-.about-section strong {
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
 /* Golfers Section */
@@ -90,19 +85,19 @@ section h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin: 2rem auto;
 }
 
 .golfer-card {
   background-color: #f8fafc;
   padding: 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .golfer-card h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: #166534;
   margin-bottom: 0.5rem;
-  color: #333;
 }
 
 .golfer-card p {
@@ -110,93 +105,56 @@ section h2 {
   font-size: 0.875rem;
 }
 
-/* MyPlayer Page Specific Styles */
-.player-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+/* Profile, Equipment, Friends Sections */
+.profile-section, .equipment-section, .friends-section {
+  background-color: #e9f5ec;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.profile-section h2, .equipment-section h2, .friends-section h2 {
+  font-size: 1.25rem;
+  color: #166534;
+  margin-bottom: 1rem;
+}
+
+.profile-section p, .equipment-section ul, .friends-section ul {
+  color: #333;
+}
+
+.equipment-section li, .friends-section li {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Contact Form */
+.contact-form {
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile-section {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
+.contact-form h2 {
+  color: #166534;
+  margin-bottom: 1rem;
 }
 
-.equipment-section {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
-}
-
-.friends-section {
-  background-color: #dcfce7;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-}
-
-.profile-section h3,
-.equipment-section h3,
-.friends-section h3 {
-  font-size: 1.125rem;
+.contact-form p {
   margin-bottom: 1rem;
   color: #333;
 }
 
-/* Equipment List Styling */
-.equipment-section ul {
-  list-style: none;
-}
-
-.equipment-section li {
-  margin-bottom: 0.5rem;
-  font-size: 0.875rem;
-  color: #666;
-}
-
-/* Friends List Styling */
-.friend-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
-
-.friend-item img {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 9999px;
-  background-color: #e5e7eb;
-}
-
-/* Contact Form Styling */
-.contact-form {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-  margin-bottom: 1rem;
-}
-
-.form-row {
+.contact-form .form-row {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #e5e7eb;
@@ -223,16 +181,18 @@ section h2 {
   background-color: #15803d;
 }
 
-/* Stay in the Loop Section */
+/* Newsletter Section */
 .contact-us {
   background-color: #dcfce7;
   padding: 2rem;
-  border-radius: 0.5rem;
-  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
   text-align: center;
 }
 
 .contact-us h3 {
+  color: #166534;
   margin-bottom: 1rem;
 }
 
@@ -251,11 +211,18 @@ section h2 {
   border: none;
   border-radius: 0.375rem;
   cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-us button:hover {
+  background-color: #15803d;
 }
 
 /* Footer styling */
 footer {
-  background-color: #f8fafc;
+  background-image: url('images/golf_course_scenic.png');
+  background-size: cover;
+  background-position: center;
   color: #666;
   text-align: center;
   padding: 2rem;
@@ -270,36 +237,23 @@ footer p {
 /* Responsive Design */
 @media (max-width: 768px) {
   .golfers-section {
-      grid-template-columns: 1fr;
-  }
-
-  .player-grid {
-      grid-template-columns: 1fr;
-  }
-
-  .form-row {
-      flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   header {
-      flex-direction: column;
-      text-align: center;
-      padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
   }
 
   nav {
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
   }
 
-  .contact-us input {
-      width: 100%;
-      margin-bottom: 1rem;
-      margin-right: 0;
-  }
-
-  .contact-us button {
-      width: 100%;
+  .contact-us input, .contact-us button {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
