@@ -1,0 +1,305 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header img {
+  height: 48px;
+  width: auto;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 2rem 0 1rem 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #166534;
+  background-color: #dcfce7;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #bbf7d0;
+}
+
+/* Homepage Specific Styles */
+section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About Section */
+section h2 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section {
+  background-color: #dcfce7;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 2rem auto;
+}
+
+.about-section p {
+  margin-bottom: 1rem;
+}
+
+.about-section strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Golfers Section */
+.golfers-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+.golfer-card {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.golfer-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.golfer-card p {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* MyPlayer Page Specific Styles */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.equipment-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.friends-section {
+  background-color: #dcfce7;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.profile-section h3,
+.equipment-section h3,
+.friends-section h3 {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Equipment List Styling */
+.equipment-section ul {
+  list-style: none;
+}
+
+.equipment-section li {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Friends List Styling */
+.friend-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.friend-item img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background-color: #e5e7eb;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #15803d;
+}
+
+/* Stay in the Loop Section */
+.contact-us {
+  background-color: #dcfce7;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.contact-us h3 {
+  margin-bottom: 1rem;
+}
+
+.contact-us input {
+  width: 300px;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  margin-right: 1rem;
+}
+
+.contact-us button {
+  background-color: #16a34a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+  background-color: #f8fafc;
+  color: #666;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .golfers-section {
+      grid-template-columns: 1fr;
+  }
+
+  .player-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .form-row {
+      flex-direction: column;
+  }
+
+  header {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+  }
+
+  nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+  }
+
+  .contact-us input {
+      width: 100%;
+      margin-bottom: 1rem;
+      margin-right: 0;
+  }
+
+  .contact-us button {
+      width: 100%;
+  }
+}
